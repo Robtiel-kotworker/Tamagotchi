@@ -1,6 +1,6 @@
 # 🐣 Tama・Pet
 
-Ein Tamagotchi-artiges virtuelles Haustier als Web-App. Ein Ei schlüpft, wächst über Baby → Kind → Erwachsen, und will gefüttert, bespielt , sauber gehalten und schlafen gelegt werden. Die Kreatur wird vollständig prozedural als Pixelgrafik gerendert, der Zustand bleibt über `localStorage` auch nach dem Schließen des Tabs erhalten — inklusive Fortschritt, der währenddessen "offline" vergangen ist.
+Ein Tamagotchi-artiges virtuelles Haustier als Web-App. Ein Ei schlüpft, wächst über Baby → Kind → Erwachsen, und will gefüttert, bespielt , sauber gehalten und schlafen gelegt werden. Die Kreatur wird vollständig prozedural als Pixelgrafik gerendert, der Zustand bleibt über `localStorage` auch nach dem Schließen des Tabs erhalten — inklusive Fortschritt, der währenddessen "offline" vergangen ist. 
 
 ![Stack](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)
 ![Stack](https://img.shields.io/badge/Vite-5-646CFF?logo=vite&logoColor=white)

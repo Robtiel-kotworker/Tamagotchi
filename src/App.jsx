@@ -278,8 +278,8 @@ export default function App() {
             <div className="stats">
               <Bar value={pet.hunger} icon="🎹" />
               <Bar value={pet.happiness} icon="💿" />
-              <Bar value={pet.hygiene} icon="😮‍💨" />
-              <Bar value={pet.energy} icon="🔄" />
+              <Bar value={pet.hygiene} icon="🔄" />
+              <Bar value={pet.energy} icon="😮‍💨" />
             </div>
           )}
 

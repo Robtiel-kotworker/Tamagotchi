@@ -55,7 +55,7 @@ export default function Login({ onLoggedIn }) {
   return (
     <div className="tg-app">
       <div className="device">
-        <div className="device-label">WAY TO BRETTANIEN</div>
+        <div className="device-label">DRUCK·GOT·SHE</div>
         <div className="screen">
           <div className="screen-scanlines" />
           <div className="screen-top">
@@ -63,7 +63,7 @@ export default function Login({ onLoggedIn }) {
           </div>
 
           <div className="login-panel">
-            <div className="login-hint">Wie heißt du?</div>
+            <div className="login-hint">Wie heißt du, Digga?</div>
             <form onSubmit={attemptLogin} className="login-form">
               <input
                 type="text"

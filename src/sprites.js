@@ -20,11 +20,14 @@ function ellipseBody(rx, ry, cx, cy) {
 export function bodyFor(stage) {
   let rx, ry, cy;
   let extras = [];
+  let score = new Set();
 
   if (stage === "egg") {
-    rx = 3.4;
-    ry = 4.6;
+    // Keine Ei-Form mehr, sondern eine ovale Tablette mit Bruchrille.
+    rx = 4.4;
+    ry = 3;
     cy = CENTER;
+    for (let c = 1; c < GRID - 1; c++) score.add(`${cy},${c}`);
   } else if (stage === "baby") {
     rx = 2.8;
     ry = 2.8;
@@ -60,7 +63,8 @@ export function bodyFor(stage) {
 
   const cells = ellipseBody(rx, ry, CENTER, cy);
   extras.forEach((e) => cells.add(e));
-  return { cells, rx, ry, cy };
+  const scoreline = new Set([...score].filter((key) => cells.has(key)));
+  return { cells, rx, ry, cy, scoreline };
 }
 
 // 5x5 Icons für die Bedienknöpfe.

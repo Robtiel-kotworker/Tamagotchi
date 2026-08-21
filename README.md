@@ -17,6 +17,15 @@ Ein Tamagotchi-artiges virtuelles Haustier als Web-App. Ein Ei schlüpft, wächs
 
 ## Schnellstart
 
+Die App speichert die Kreaturen nutzernamenbasiert in Supabase (Tabelle `pets`). Damit der Login funktioniert, wird zuerst eine `.env`-Datei mit den Supabase-Zugangsdaten benötigt:
+
+```bash
+cp .env.example .env
+# dann VITE_SUPABASE_URL und VITE_SUPABASE_ANON_KEY in .env eintragen
+```
+
+Beide Werte findest du im Supabase-Dashboard des Projekts unter „Project Settings → API". Ohne diese Datei schlägt jeder Login-/Registrierungsversuch fehl, da der Supabase-Client sonst ohne gültige URL/Key erstellt wird.
+
 ```bash
 npm install
 npm run dev

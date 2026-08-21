@@ -17,10 +17,10 @@ export const ADULT_AGE = 120 * MIN;
 
 /** Die vier möglichen Kreaturen, die beim Schlüpfen entstehen können. */
 export const SPECIES = [
-  "Hardtekk Kreatur",
-  "Industrial Techno Kreatur",
-  "Psy-Trance Kreatur",
-  "Gabber Kreatur",
+  "Hardtekk-Mutant",
+  "Industrial-Zombie",
+  "Psy-Trance-Dämon",
+  "Gabber-Bastard",
 ];
 
 export const clamp = (v, min = 0, max = 100) => Math.min(max, Math.max(min, v));

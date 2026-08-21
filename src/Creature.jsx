@@ -2,10 +2,10 @@ import React from "react";
 import { GRID, CENTER, bodyFor, BUTTON_ICONS } from "./sprites.js";
 
 const SPECIES_SLUG = {
-  "Hardtekk Kreatur": "hardtekk",
-  "Industrial Techno Kreatur": "industrial",
-  "Psy-Trance Kreatur": "psytrance",
-  "Gabber Kreatur": "gabber",
+  "Hardtekk-Mutant": "hardtekk",
+  "Industrial-Zombie": "industrial",
+  "Psy-Trance-Dämon": "psytrance",
+  "Gabber-Bastard": "gabber",
 };
 
 export function MiniIcon({ kind, className }) {
@@ -24,7 +24,7 @@ export function MiniIcon({ kind, className }) {
 }
 
 export function Creature({ stage, mood, species }) {
-  const { cells, rx, ry, cy } = bodyFor(stage);
+  const { cells, rx, ry, cy, scoreline } = bodyFor(stage);
   const eyeRow = Math.round(cy - ry * 0.35);
   const eyeColL = Math.round(CENTER - rx * 0.42);
   const eyeColR = Math.round(CENTER + rx * 0.42);
@@ -34,6 +34,7 @@ export function Creature({ stage, mood, species }) {
   const cellClass = (r, c) => {
     const key = `${r},${c}`;
     if (!cells.has(key)) return "px off";
+    if (scoreline && scoreline.has(key)) return "px on scoreline";
 
     if (showFace && mood !== "dead") {
       if (r === eyeRow && (c === eyeColL || c === eyeColR)) {

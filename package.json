@@ -1,7 +1,7 @@
 {
-  "name": "tamagotchi-app",
+  "name": "druck-got-she",
   "version": "1.0.0",
-  "description": "Ein Tamagotchi-artiges virtuelles Haustier als Web-App – React + Vite, pixelbasierte Kreatur, persistenter Zustand via Supabase.",
+  "description": "Druck-Got-She – ein abgefucktes virtuelles Wesen als Web-App. React + Vite, pixelbasierte Kreatur, persistenter Zustand via Supabase.",
   "type": "module",
   "scripts": {
     "dev": "vite",

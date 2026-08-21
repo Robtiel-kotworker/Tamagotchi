@@ -16,7 +16,7 @@ import {
   now,
 } from "./game.js";
 
-const STAGE_LABEL = { egg: "Ei", baby: "Baby", child: "Kind", adult: "Erwachsen" };
+const STAGE_LABEL = { egg: "Pille", baby: "Baby", child: "Raver", adult: "Kaputt" };
 
 export default function App() {
   const [user, setUser] = useState(undefined); // undefined = noch nicht geprüft, null = ausgeloggt
@@ -106,7 +106,7 @@ export default function App() {
       asleep: false,
     }));
     showFlash("eating");
-    showMessage("Lecker!");
+    showMessage("Reingepfiffen!");
   };
 
   const play = () => {
@@ -127,7 +127,7 @@ export default function App() {
       };
       savePet(next, user);
       showFlash("playing");
-      showMessage("Das macht Spaß!");
+      showMessage("Läuft wie Sau!");
       return next;
     });
   };
@@ -139,7 +139,7 @@ export default function App() {
       hygiene: Math.min(100, p.hygiene + 35),
     }));
     showFlash("cleaning");
-    showMessage("Sauber sortiert!");
+    showMessage("Wieder blitzeblank, Alter!");
   };
 
   const toggleSleep = () => {
@@ -150,7 +150,7 @@ export default function App() {
     const fresh = createNewPet();
     setPet(fresh);
     savePet(fresh, user);
-    showMessage("Ein neues Ei wartet auf dich!");
+    showMessage("Eine neue Pille wartet auf dich!");
   };
 
   const logout = () => {
@@ -210,7 +210,7 @@ export default function App() {
     <div className="tg-app">
       <div className="device">
         <div className="device-label">
-          WAY TO BRETTANIEN
+          DRUCK·GOT·SHE
           <button className="logout-link" onClick={logout} aria-label="Ausloggen">
             {user} · Logout
           </button>
@@ -264,12 +264,12 @@ export default function App() {
           </div>
 
           {isEgg && (
-            <div className="hatch-hint">Brütet noch {Math.ceil(hatchRemaining / MIN)} Min …</div>
+            <div className="hatch-hint">Löst sich noch {Math.ceil(hatchRemaining / MIN)} Min auf …</div>
           )}
 
           {isDead && (
             <div className="death-panel">
-              <div>Dein Wesen ist eingeschlafen für immer.</div>
+              <div>Dein Wesen ist für immer abgestürzt.</div>
               <div className="death-age">Gelebt: {ageLabel}</div>
             </div>
           )}
@@ -289,7 +289,7 @@ export default function App() {
         <div className="controls">
           {isDead ? (
             <button className="btn btn-wide" onClick={restart}>
-              Neues Ei
+              Neue Pille
             </button>
           ) : (
             <>

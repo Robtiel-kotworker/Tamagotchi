@@ -1,6 +1,6 @@
 # 💊 Druck-Got-She
 
-Ein total abgefucktes, virtuelles Hardtekkmon als Web-App. Statt einem Ei liegt am Anfang eine Tablette mit Bruchrille im Gehäuse — sie löst sich auf, und daraus wächst ein krankes kleines Wesen über Baby → Raver → Kaputt, das gefüttert, bespielt, sauber gehalten und schlafen gelegt werden will. Die Kreatur wird vollständig prozedural als Pixelgrafik gerendert, der Zustand bleibt über `localStorage` auch nach dem Schließen des Tabs erhalten — inklusive Fortschritt, der währenddessen "offline" vergangen ist.
+Ein total abgefucktes, virtuelles Hardtekkmon als Web-App. Statt einem Ei liegt am Anfang eine Tablette mit Bruchrille im Gehäuse — sie löst sich auf, und daraus wächst ein krankes kleines Wesen über Baby →  Raver → Kaputt, das gefüttert, bespielt, sauber gehalten und schlafen gelegt werden will. Die Kreatur wird vollständig prozedural als Pixelgrafik gerendert, der Zustand bleibt über `localStorage` auch nach dem Schließen des Tabs erhalten — inklusive Fortschritt, der währenddessen "offline" vergangen ist.
 
 ![Stack](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)
 ![Stack](https://img.shields.io/badge/Vite-5-646CFF?logo=vite&logoColor=white)
